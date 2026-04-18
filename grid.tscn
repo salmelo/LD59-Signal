@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://ill4eu5arg71"]
+
+[ext_resource type="Script" uid="uid://ght7pihflbtf" path="res://grid.gd" id="1_ebq2e"]
+[ext_resource type="PackedScene" uid="uid://ca28gcm0k2gnj" path="res://hex.tscn" id="2_65i6o"]
+
+[node name="grid" type="Node2D" unique_id=2125085243]
+script = ExtResource("1_ebq2e")
+cellScene = ExtResource("2_65i6o")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=74739656]
+points = PackedVector2Array(-50, -43.33, 725, -43.33, 725, 693.33, -50, 693.33)
+closed = true
+width = 1.0

@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://b0p1w6xrwine4"]
+
+[ext_resource type="PackedScene" uid="uid://ill4eu5arg71" path="res://grid.tscn" id="1_0xm2m"]
+
+[node name="main" type="Node2D" unique_id=1653412726]
+
+[node name="grid" parent="." unique_id=2125085243 instance=ExtResource("1_0xm2m")]
+position = Vector2(50, 43)
+height = 6

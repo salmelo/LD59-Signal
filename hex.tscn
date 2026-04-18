@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://ca28gcm0k2gnj"]
+
+[ext_resource type="Script" uid="uid://bhey60yfivxju" path="res://gridcell.gd" id="1_djunl"]
+
+[node name="hex" type="Node2D" unique_id=1230098156]
+script = ExtResource("1_djunl")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=842367122]
+scale = Vector2(0.5, 0.5)
+points = PackedVector2Array(-100, 0, -50, 86.66, 50, 86.66, 100, 0, 50, -86.66, -50, -86.66)
+closed = true
+width = 4.0
+default_color = Color(0.17252332, 0.15329999, 0.73, 1)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=291506014]
+monitoring = false
+monitorable = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1498710875]
+scale = Vector2(0.5, 0.5)
+polygon = PackedVector2Array(-100, 0, -50, 86.66, 50, 86.66, 100, 0, 50, -86.66, -50, -86.66)
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
